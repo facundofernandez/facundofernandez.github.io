@@ -1,0 +1,26 @@
+{
+  "name": "webgitfacundofernandez",
+  "version": "1.0.0",
+  "description": "Pagina Github",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facundofernandez/facundofernandez.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facundofernandez/facundofernandez.github.io/issues"
+  },
+  "homepage": "https://github.com/facundofernandez/facundofernandez.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglifycss": "^1.0.8"
+  }
+}
