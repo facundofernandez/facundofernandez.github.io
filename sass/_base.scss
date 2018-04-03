@@ -1,8 +1,4 @@
-$primaryColor:white;
-$primaryColorHover:gold;
-$bg:white;
-$secondaryColor:#13222c;
-
+@import 'colors';
 @import url('https://fonts.googleapis.com/css?family=Signika');
 
 *,*::before,*::after{
@@ -26,6 +22,10 @@ body{
   }
 }
 
+a{
+  text-decoration: none;
+  color:inherit;
+}
 
 nav {
 
@@ -60,44 +60,73 @@ nav {
   background: $bg;
   height: 100%;
   width: 100%;
- 
-  &__header{
-    display: none;
-    padding:2em;
-    position: relative;
-    z-index: 20;
-  }
+}
 
-  &__nav{
-    
-  }
-
+.section{
+  padding:3em;
+  color:$secondaryColor;
   &__home{
-    padding:3em;
-    color:$secondaryColor;
     font-family: 'Signika', cursive;
-    position: absolute;
-    z-index: 10;
-    top:0;
-    //padding: 6em 2em;
     height: 100%;width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    &-title{
-      color:$secondaryColor;
-    }
-    &-info{
+    &__social{
 
-    }
-    &-social{
-      width: calc(100% - 0em);
-      color:$secondaryColor;
+      width: 100%;
       padding: .5em 0;
       list-style: none;
       display: flex;
       justify-content: space-around;
+      /*
+      li{
+        position: relative;
+        &:hover::before{
+          content: attr(data-text);
+          font-size: 12px;
+          padding: .5em;
+          position: absolute;
+          top:30px;left:-25px;
+          margin:10px;
+          color:white;
+          &:hover{
+
+          }
+        }
+      }
+      */
+      li{
+        transition: all 200ms;
+        &:hover{
+          transform: scale(1.2)
+        }
+
+      }
+      &-fb{
+        cursor: pointer;
+        &:hover{
+          color:$facebook;
+        }
+      }
+      &-ig{
+        cursor: pointer;
+        &:hover{
+          color:$instagram;
+        }
+      }
+      &-gh{
+        cursor: pointer;
+        &:hover{
+          color:$github;
+        }
+      }
+      &-ln{
+        cursor: pointer;
+        &:hover{
+          color:$linkedin;
+        }
+      }
     }
   }
   
