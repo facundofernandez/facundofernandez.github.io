@@ -1,0 +1,106 @@
+$primaryColor:white;
+$primaryColorHover:gold;
+$bg:white;
+$secondaryColor:#13222c;
+
+@import url('https://fonts.googleapis.com/css?family=Signika');
+
+*,*::before,*::after{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+
+body{
+
+  background:$bg;
+  color:$primaryColor;
+  height: 100vh;
+
+}
+
+.btn{
+  &-home{
+    background: $secondaryColor;
+  }
+}
+
+
+nav {
+
+ font-family: 'Signika', cursive;
+ width: 100%;
+ background: #020f18;
+ display: flex;
+
+ outline: $secondaryColor 5px solid;
+ outline-offset: 0px;
+ transition: all 100ms ease-in-out;
+ &:hover{
+  outline-offset: 2px;
+ }
+ a{
+    text-decoration: none;
+    color:$primaryColor;
+    padding:1em;
+    transition:all 200ms;
+
+    &:hover{
+
+      color:$primaryColorHover;
+    }
+  }
+}
+
+.content{
+  //background-image: url(https://images.pexels.com/photos/297755/pexels-photo-297755.jpeg?cs=srgb&dl=adult-book-business-297755.jpg&fm=jpg);
+  //background-size: cover;
+  //background-position: center center;
+  background: $bg;
+  height: 100%;
+  width: 100%;
+ 
+  &__header{
+    display: none;
+    padding:2em;
+    position: relative;
+    z-index: 20;
+  }
+
+  &__nav{
+    
+  }
+
+  &__home{
+    padding:3em;
+    color:$secondaryColor;
+    font-family: 'Signika', cursive;
+    position: absolute;
+    z-index: 10;
+    top:0;
+    //padding: 6em 2em;
+    height: 100%;width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    &-title{
+      color:$secondaryColor;
+    }
+    &-info{
+
+    }
+    &-social{
+      width: calc(100% - 0em);
+      color:$secondaryColor;
+      padding: .5em 0;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  
+  
+}
