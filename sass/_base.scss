@@ -72,13 +72,23 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    &-info{
+      text-align: center;
+      display: block;
+    }
+
     &__social{
 
-      width: 100%;
-      padding: .5em 0;
+      width: 80%;
+      padding: 0.5rem 0;
       list-style: none;
       display: flex;
+      /* margin-top: 2rem; */
       justify-content: space-around;
+      background: #14232c0a;
+      border-radius: 29px;
+      margin: 2rem auto 0 auto;
+      box-shadow: #14232c2e 0px 0px 8px 0px;
       /*
       li{
         position: relative;
@@ -98,10 +108,19 @@ nav {
       */
       li{
         transition: all 200ms;
+        a{
+          display: flex;
+        }
         &:hover{
           transform: scale(1.2)
         }
 
+      }
+      &-cp{
+        cursor: pointer;
+        &:hover{
+          color:$codepen;
+        }
       }
       &-fb{
         cursor: pointer;
@@ -132,4 +151,20 @@ nav {
   
   
   
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .section__home {
+    padding:2rem
+  }
+
+  .section__home__social{
+    width: 100%;
+  }
+
+  .section__home-title{
+    text-align:center
+  }
 }

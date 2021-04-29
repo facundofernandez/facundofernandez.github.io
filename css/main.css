@@ -1,12 +1,151 @@
-@import url("https://fonts.googleapis.com/css?family=Signika");*,*::before,*::after{padding:0;margin:0;-webkit-box-sizing:border-box;box-sizing:border-box}
-body{background:white;color:white;height:100vh}.btn-home{background:#13222c}a{text-decoration:none;color:inherit}
-nav{font-family:'Signika',cursive;width:100%;background:#020f18;display:-webkit-box;display:-ms-flexbox;display:flex;outline:#13222c 5px solid;outline-offset:0;-webkit-transition:all 100ms ease-in-out;transition:all 100ms ease-in-out}
-nav:hover{outline-offset:2px}nav a{text-decoration:none;color:white;padding:1em;-webkit-transition:all 200ms;transition:all 200ms}
-nav a:hover{color:gold}.content{background:white;height:100%;width:100%}.section{padding:3em;color:#13222c}
-.section__home{font-family:'Signika',cursive;height:100%;width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;font-size:2em}
-.section__home__social{width:100%;padding:.5em 0;list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-pack:distribute;justify-content:space-around}
-.section__home__social li{-webkit-transition:all 200ms;transition:all 200ms}.section__home__social li:hover{-webkit-transform:scale(1.2);transform:scale(1.2)}
-.section__home__social-fb{cursor:pointer}.section__home__social-fb:hover{color:#3b5998}
-.section__home__social-ig{cursor:pointer}.section__home__social-ig:hover{color:#e56969}
-.section__home__social-gh{cursor:pointer}.section__home__social-gh:hover{color:#2b3137}
-.section__home__social-ln{cursor:pointer}.section__home__social-ln:hover{color:#0077b5}
+@import url("https://fonts.googleapis.com/css?family=Signika");
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: white;
+  height: 100vh;
+}
+
+.btn-home {
+  background: #13222c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  font-family: "Signika", cursive;
+  width: 100%;
+  background: #020f18;
+  display: flex;
+  outline: #13222c 5px solid;
+  outline-offset: 0px;
+  transition: all 100ms ease-in-out;
+}
+nav:hover {
+  outline-offset: 2px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 1em;
+  transition: all 200ms;
+}
+nav a:hover {
+  color: gold;
+}
+
+.content {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  padding: 3em;
+  color: #13222c;
+}
+.section__home {
+  font-family: "Signika", cursive;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+.section__home-info {
+  text-align: center;
+  display: block;
+}
+.section__home__social {
+  width: 80%;
+  padding: 0.5rem 0;
+  list-style: none;
+  display: flex;
+  /* margin-top: 2rem; */
+  justify-content: space-around;
+  background: #14232c0a;
+  border-radius: 29px;
+  margin: 2rem auto 0 auto;
+  box-shadow: #14232c2e 0px 0px 8px 0px;
+  /*
+  li{
+    position: relative;
+    &:hover::before{
+      content: attr(data-text);
+      font-size: 12px;
+      padding: .5em;
+      position: absolute;
+      top:30px;left:-25px;
+      margin:10px;
+      color:white;
+      &:hover{
+
+      }
+    }
+  }
+  */
+}
+.section__home__social li {
+  transition: all 200ms;
+}
+.section__home__social li a {
+  display: flex;
+}
+.section__home__social li:hover {
+  transform: scale(1.2);
+}
+.section__home__social-cp {
+  cursor: pointer;
+}
+.section__home__social-cp:hover {
+  color: #2b3137;
+}
+.section__home__social-fb {
+  cursor: pointer;
+}
+.section__home__social-fb:hover {
+  color: #3B5998;
+}
+.section__home__social-ig {
+  cursor: pointer;
+}
+.section__home__social-ig:hover {
+  color: #e56969;
+}
+.section__home__social-gh {
+  cursor: pointer;
+}
+.section__home__social-gh:hover {
+  color: #2b3137;
+}
+.section__home__social-ln {
+  cursor: pointer;
+}
+.section__home__social-ln:hover {
+  color: #0077B5;
+}
+
+@media only screen and (max-width: 600px) {
+  .section__home {
+    padding: 2rem;
+  }
+
+  .section__home__social {
+    width: 100%;
+  }
+
+  .section__home-title {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
